@@ -8,15 +8,7 @@ return {
   },
   config = function()
     require("mason").setup()
-    require("mason-lspconfig").setup({
-      handlers = {
-        function(server_name)         -- default handler (optional)
-          require("lspconfig")[server_name].setup {
-            capabilities = capabilities
-          }
-        end,
-      }
-    })
+    require("mason-lspconfig").setup()
     require('cmp').setup {
       sources = {
         { name = 'nvim_lsp' },
@@ -24,4 +16,3 @@ return {
     }
   end
 }
-
