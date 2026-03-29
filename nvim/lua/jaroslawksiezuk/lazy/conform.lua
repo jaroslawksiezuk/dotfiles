@@ -10,6 +10,7 @@ return {
 			formatters_by_ft = {
 				typescript = { "prettier" },
 				javascript = { "prettier" },
+				scss = { "prettier" },
 				java = { "google-java-format" },
 				go = { "gofmt", "goimports" },
 				lua = { "stylua" },
